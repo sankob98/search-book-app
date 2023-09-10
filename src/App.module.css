@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header {
+  background-image: url('./assets/cover.jpg');
+  background-size: contain;
+  background-repeat: repeat-x;
+  color: #fff;
+  padding: 25px;
+}
+
+.title {
+  font-size: 45px;
+}
+.search {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    background-size: cover;
+  }
+}

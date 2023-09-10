@@ -1,0 +1,43 @@
+.book_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 20px auto 20px auto 20px auto 20px auto;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 20px;
+  padding-top: 20px;
+  justify-items: center;
+}
+.books_block {
+  padding: 10px;
+  position: relative;
+}
+.btn {
+  margin-top: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .book_container {
+    -ms-grid-columns: auto 20px auto 20px auto 20px auto;
+    grid-template-columns: repeat(4, auto);
+  }
+}
+@media (max-width: 1175px) {
+  .book_container {
+    -ms-grid-columns: auto 20px auto 20px auto;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media (max-width: 880px) {
+  .book_container {
+    -ms-grid-columns: auto 20px auto;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 565px) {
+  .book_container {
+    -ms-grid-columns: auto;
+    grid-template-columns: repeat(1, auto);
+  }
+}

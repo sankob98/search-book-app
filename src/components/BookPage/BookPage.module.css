@@ -1,0 +1,126 @@
+.book_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.btn_back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(232, 228, 228);
+  cursor: pointer;
+  padding: 1px 0;
+}
+
+.btn_back:hover {
+  opacity: 0.7;
+}
+
+.btn_back_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1px 7px;
+  text-decoration: none;
+  color: black;
+}
+
+.btn_back_text {
+  padding-left: 10px;
+  position: relative;
+}
+
+.btn_back_text::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.img_wrapper {
+  padding: 30px 80px;
+  background-color: rgb(232, 228, 228);
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+}
+
+.img {
+  max-width: 260px;
+  width: 100%;
+  -webkit-box-shadow: 7px 7px 7px #888888;
+  box-shadow: 7px 7px 7px #888888;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.info {
+  padding: 30px;
+  text-align: left;
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+}
+
+.categories {
+  font-size: 14px;
+  color: rgb(16, 16, 16);
+}
+
+.title {
+  padding: 30px 0 15px 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.authors {
+  font-size: 14px;
+  color: rgb(107, 104, 104);
+  text-decoration: underline;
+}
+
+.description {
+  max-height: 170px;
+  border: 1px solid rgb(232, 228, 228);
+  margin-top: 30px;
+  padding-left: 25px;
+  padding: 15px;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .book_page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}

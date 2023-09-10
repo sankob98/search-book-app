@@ -1,0 +1,41 @@
+.book {
+  width: 250px;
+  background-color: rgb(232, 228, 228);
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.link {
+  text-decoration: none;
+  color: #000;
+}
+.title {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.categories {
+  text-decoration: underline;
+  color: rgb(107, 104, 104);
+  font-size: 14px;
+}
+.authors {
+  color: rgb(107, 104, 104);
+  font-size: 14px;
+}
+.img {
+  -webkit-box-shadow: 7px 7px 7px #888888;
+  box-shadow: 7px 7px 7px #888888;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 100%;
+}
+.img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.info {
+  margin-top: 30px;
+  text-align: left;
+}

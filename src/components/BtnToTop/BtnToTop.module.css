@@ -1,0 +1,12 @@
+.btn {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+}

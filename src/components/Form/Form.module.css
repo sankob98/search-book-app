@@ -1,0 +1,94 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.wrapper {
+  background-image: url('../../assets/cover.jpg');
+  background-size: contain;
+  background-repeat: repeat-x;
+  color: #fff;
+  padding: 25px;
+}
+.title {
+  font-size: 45px;
+}
+.inputWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 40px;
+  margin: 30px 0;
+}
+.searchIcon {
+  height: 100%;
+}
+.input {
+  height: 100%;
+  width: 40%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 20px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-style: italic;
+}
+.form_btn {
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #fff;
+}
+.popup_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .inputWrapper {
+    height: 35px;
+  }
+  .input {
+    width: 60%;
+    font-size: 17px;
+  }
+  .title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 425px) {
+  .input {
+    width: 80%;
+  }
+  .popup_wrapper {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .inputWrapper {
+    margin: 15px 0;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
